@@ -1,0 +1,37 @@
+$valueColor: #3f4ca6;
+$indexColor: #fca546;
+.combine-chart {
+  position: relative;
+  height: 500px;
+  .index-chart {
+    position: absolute;
+    bottom: 50px;
+  }
+}
+.rv-xy-plot__series--line {
+  fill: none;
+  stroke: $valueColor !important;
+  stroke-width: 2px;
+
+  &.line-index {
+    stroke: $indexColor !important;
+  }
+}
+.rv-xy-plot__inner {
+  overflow: visible;
+}
+.rv-xy-plot__axis {
+  stroke: #9ca1b2;
+}
+
+.index-chart .rv-xy-plot__axis--vertical {
+  .rv-xy-plot__axis__ticks text {
+    stroke: $indexColor;
+  }
+}
+
+.rv-xy-plot__axis--vertical {
+  .rv-xy-plot__axis__ticks text {
+    stroke: $valueColor;
+  }
+}

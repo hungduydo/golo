@@ -1,0 +1,189 @@
+// Topbar
+.topbar {
+  height: $topbar-base-height;
+  background-color: $background;
+  #sidebarToggleTop {
+    height: 2.5rem;
+    width: 2.5rem;
+    &:hover {
+      background-color: $gray-200;
+    }
+    &:active {
+      background-color: $gray-300;
+    }
+  }
+  .navbar-search {
+    width: 25rem;
+    input {
+      font-size: 0.85rem;
+      height: auto;
+    }
+  }
+  .topbar-divider {
+    width: 0;
+    border-right: 1px solid $border-color;
+    height: calc(#{$topbar-base-height} - 2rem);
+    margin: auto 1rem;
+  }
+  .nav-item {
+    margin: auto;
+    .nav-link {
+      height: $topbar-base-height;
+      display: flex;
+      align-items: center;
+      padding: 0 1.2rem;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .dropdown {
+    position: static;
+    .dropdown-menu {
+      width: calc(100% - #{$grid-gutter-width});
+      right: $grid-gutter-width / 2;
+    }
+  }
+  .dropdown-list {
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    .dropdown-header {
+      background-color: $primary;
+      border: 1px solid $primary;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      color: $white;
+    }
+    .dropdown-item {
+      white-space: normal;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-left: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+      line-height: 1.3rem;
+      .dropdown-list-image {
+        position: relative;
+        height: 2.5rem;
+        width: 2.5rem;
+        img {
+          height: 2.5rem;
+          width: 2.5rem;
+        }
+        .status-indicator {
+          background-color: $gray-200;
+          height: 0.75rem;
+          width: 0.75rem;
+          border-radius: 100%;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          border: .125rem solid $white;
+        }
+      }
+      .text-truncate {
+        max-width: 10rem;
+      }
+      &:active {
+        background-color: $gray-200;
+        color: $gray-900;
+      }
+    }
+  }
+  .home-logo {
+    width: 100px;
+  }
+  @include media-breakpoint-up(sm) {
+    .dropdown {
+      position: relative;
+      .dropdown-menu {
+        width: auto;
+        right: 0;
+      }
+    }
+    .dropdown-list {
+      width: 20rem !important;
+      .dropdown-item {
+        .text-truncate {
+          max-width: 13.375rem;
+        }
+      }
+    }
+  }
+}
+
+.topbar.navbar-dark {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $white;
+        &:hover {
+          color: $green;
+        }
+        &:active {
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
+.topbar.navbar-light {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $gray-400;
+        &:hover {
+          color: $gray-500;
+        }
+        &:active {
+          color: $gray-600;
+        }
+      }
+    }
+  }
+}
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 25px;
+  color: white;
+  font-size: 0.8rem;
+  overflow-x: hidden;
+  border-bottom: 1px solid #0c141f;
+  background-color: #151d28;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+.code-up,
+.code-down {
+  i {
+    font-size: 1.2rem;
+    transform: scaleX(0.7);
+  }
+}
+
+.code-down {
+  color: $red;
+}
+
+.code-up {
+  color: $green;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

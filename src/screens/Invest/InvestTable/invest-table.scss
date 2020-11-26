@@ -1,0 +1,48 @@
+$valueColor: #3f4ca6;
+$indexColor: #fca546;
+
+.invest-table {
+  .title {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .table {
+    thead {
+      background-color: #1e2834;
+      border: 1px solid #3e4552;
+      color: white;
+      &[data-test="table-foot"] {
+        display: none;
+      }
+
+      th {
+        border-bottom: none;
+        border-top: none;
+
+        &::after {
+          font-weight: 900;
+          font-family: "Font Awesome 5 Free";
+          margin-left: 15px;
+        }
+        &.sorting::after {
+          content: "\f0dc";
+        }
+        &.sorting_desc::after {
+          content: "\f0dd";
+        }
+        &.sorting_asc::after {
+          content: "\f0de";
+        }
+      }
+    }
+    td {
+      border-top: none;
+      font-size: 16px;
+      letter-spacing: 0px;
+      line-height: 35px;
+      color: #ffffff;
+      font-weight: 600;
+    }
+  }
+}

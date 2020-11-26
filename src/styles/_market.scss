@@ -1,0 +1,141 @@
+.market-page .row {
+  margin-top: 5rem;
+}
+.mbi-info {
+  .cycle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #35d379;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .title {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 30px;
+    color: #a5b4c5;
+    font-weight: 400;
+  }
+
+  .mbi-num {
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 1rem;
+    i {
+      font-size: 0.5em;
+      font-style: normal;
+      position: relative;
+      top: -0.7em;
+    }
+
+    &.num-1 {
+      color: #923139;
+    }
+    &.num-2 {
+      color: #ee7c33;
+    }
+    &.num-3 {
+      color: #e1ff19;
+    }
+    &.num-4 {
+      color: #35d379;
+    }
+    &.num-5 {
+      color: #6ad493;
+    }
+  }
+
+  .mbi-status {
+    font-size: 14px;
+    color: #a5b4c5;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    b {
+      font-size: 1.5em;
+      color: white;
+    }
+  }
+
+  .market-num {
+    display: flex;
+    align-items: center;
+    .mbi-num {
+      font-size: 60px;
+      margin-right: 1rem;
+    }
+
+    .mbi-status {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .mbi-total-status {
+    display: flex;
+    justify-content: space-between;
+    .status-1 {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .last-update {
+    font-size: 16px;
+    color: #3c4b5f;
+    font-weight: 400;
+  }
+}
+
+.chart {
+  margin-top: 5rem;
+  .chart-title {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+  }
+
+  .chart-desc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .value-line,
+    .index-line {
+      font-size: 20px;
+      line-height: 30px;
+      color: #a5b4c5;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: "";
+        width: 49px;
+        height: 4px;
+        border-radius: 2px;
+        display: inline-block;
+        margin-right: 1rem;
+      }
+    }
+    .value-line::before {
+      background-color: #3f4ca6;
+      
+    }
+
+    .index-line::before {
+      background-color: #fca546;
+    }
+  }
+  .chart-source {
+    font-size: 16px;
+    color: #334051;
+    width: 100%;
+    text-align: center;
+  }
+}

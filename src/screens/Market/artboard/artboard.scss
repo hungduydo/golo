@@ -1,0 +1,73 @@
+.artboard {
+  width: 527px;
+  height: 527px;
+  background-repeat: no-repeat;;
+  position: relative;
+  &.lock0 {
+    background-image: url(../../../assets/images/artboard/0.png);
+  }
+  &.lock1 {
+    background-image: url(../../../assets/images/artboard/1.png);
+  }
+  &.lock2 {
+    background-image: url(../../../assets/images/artboard/2.png);
+  }
+  &.lock3 {
+    background-image: url(../../../assets/images/artboard/3.png);
+  }
+  &.lock4 {
+    background-image: url(../../../assets/images/artboard/4.png);
+  }
+  &.lock5 {
+    background-image: url(../../../assets/images/artboard/5.png);
+  }
+
+  .clockwise {
+    background: url(../../../assets/images/artboard/clockwise.png);
+    width: 81px;
+    height: 132px;
+    position: absolute;
+    top: 153px;
+    transform-origin: 65px 116px;
+    left: calc(50% - 67px);
+    transition: transform 1s;
+  }
+
+  .artboard-num {
+    bottom: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 68px;
+    font-weight: bold;
+    color: #35d379;
+    z-index: 1;
+    line-height: 50px;
+    font-family: system-ui, sans-serif;
+
+    .mbi-date {
+      font-size: 20px;
+      margin-bottom: 0;
+      color: #e9ecef;
+      font-weight: normal;
+      display: block;
+    }
+
+    &.num-1 {
+      color: #923139;
+    }
+    &.num-2 {
+      color: #ee7c33;
+    }
+    &.num-3 {
+      color: #e1ff19;
+    }
+    &.num-4 {
+      color: #35d379;
+    }
+    &.num-5 {
+      color: #6AD493;
+    }
+  }
+}

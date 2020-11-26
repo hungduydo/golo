@@ -1,0 +1,57 @@
+.invest-tab {
+  border-bottom: 1px solid #35d379;
+  overflow: hidden;
+  width: 100%;
+  .nav-item {
+    width: 189px;
+    height: 55px;
+    border-radius: 3px 3px 0 0;
+    filter: drop-shadow(0 0 60px rgba(31, 32, 41, 0.1));
+    background-color: #1e2834;
+    text-align: center;
+    line-height: 55px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    color: white;
+    &.active {
+      background-color: #35d379;
+    }
+  }
+}
+.tab-content {
+  width: 100%;
+}
+
+.code-info {
+  .code-name {
+    font-size: 20px;
+    b {
+      font-size: 2em;
+      color: white;
+    }
+  }
+  .code-tab {
+    display: flex;
+    > * {
+      flex-basis: 25%;
+    }
+
+    .code-point {
+      display: flex;
+      flex-direction: column;
+      b {
+        font-size: 36px;
+        color: white;
+      }
+    }
+
+    .code-change {
+      text-align: center;
+      b {
+        font-size: 36px;
+        color: #35d379;
+        display: block;
+      }
+    }
+  }
+}

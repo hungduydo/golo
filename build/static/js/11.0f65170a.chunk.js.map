@@ -1,0 +1,1 @@
+{"version":3,"sources":["screens/AboutUs/index.js"],"names":["AboutUs"],"mappings":"yGAAA,2BAMeA,UAJC,WACd,OAAO","file":"static/js/11.0f65170a.chunk.js","sourcesContent":["import React from \"react\";\n\nconst AboutUs = () => {\n  return <h1>About Us</h1>\n};\n\nexport default AboutUs;\n"],"sourceRoot":""}
